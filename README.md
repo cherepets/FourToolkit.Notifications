@@ -1,19 +1,10 @@
-# FourClient
+# FourToolkit.Notifications
 
-Client app for popular russian tech news sites:
-- 4PDA
-- Habrahabr
-- Geektimes
-- Megamozg
-- W7Phone
-- WP-Seven
-- Microsoft Ecosystem Community
-- AllNokia
-- WP7Forum
-- Upgrade
+A library to create adaptive tiles and interactive notifications with XAML
 
-[Download for Windows Phone](http://www.windowsphone.com/en-us/store/app/fourclient-paid/4c456504-64b5-4084-99fa-2af2c3e71b41 "Download for Windows Phone")
+Example of usage:
+[PrimaryTile.xaml](https://github.com/cherepets/FourClient/blob/master/Universal%20Windows%20Platform/FourClient.Shared/Notifications/PrimaryTile.xaml "PrimaryTile.xaml")
 
-See also: [FourClientWebServer](https://github.com/cherepets/FourClientWebServer "FourClientWebServer")
+[Download from NuGet Gallery](https://www.nuget.org/packages/FourToolkit.Notifications/ "Download from NuGet Gallery")
 
 License: [WTFPL](http://www.wtfpl.net/txt/copying/ "WTFPL")
