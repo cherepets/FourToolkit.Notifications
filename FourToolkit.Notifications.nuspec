@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>FourToolkit.Notifications</id>
+        <version>1.0.0</version>
+        <authors>cherepets</authors>
+	<owners>cherepets</owners>
+        <projectUrl>https://github.com/cherepets/FourToolkit.Notifications</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Generate adaptive tiles and interactive toasts for Windows 10 via XAML with bindings (for MVVM-lovers)</description>
+        <copyright></copyright>
+        <tags>notifications, win10, windows 10, tile, tiles, toast, toasts, badge, xml, xaml, mvvm, binding</tags>
+    </metadata>
+    <files>
+        <file src="FourToolkit.Notifications\bin\Release\FourToolkit.Notifications.dll" target="lib\uap10.0"/>
+        <file src="FourToolkit.Notifications\bin\Release\FourToolkit.Notifications.pri" target="lib\uap10.0"/>
+        <file src="FourToolkit.Notifications\bin\Release\FourToolkit.Notifications.pdb" target="lib\uap10.0"/>
+    </files>
+</package>
