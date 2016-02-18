@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace FourToolkit.Notifications.InteractiveToast
 {
-    public class Action : ActionBase, IXmlDescriptor
+    public sealed class Action : ActionBase, IXmlDescriptor
     {
         string IXmlDescriptor.XmlTagName => "action";
 

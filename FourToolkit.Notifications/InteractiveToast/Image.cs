@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace FourToolkit.Notifications.InteractiveToast
 {
-    public class Image : ToastUiElement, IXmlDescriptor
+    public sealed class Image : ToastUiElement, IXmlDescriptor
     {
         string IXmlDescriptor.XmlTagName => "image";
 

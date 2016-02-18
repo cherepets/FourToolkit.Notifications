@@ -2,12 +2,11 @@
 using FourToolkit.Notifications.Xml;
 using System.Collections.Generic;
 using System.Linq;
-using Windows.UI.Xaml;
 using System.Collections;
 
 namespace FourToolkit.Notifications.InteractiveToast
 {
-    public partial class Visual : Bindable, IXmlDescriptor, IList<ToastUiElement>
+    public sealed class Visual : Bindable, IXmlDescriptor, IList<ToastUiElement>
     {
         string IXmlDescriptor.XmlTagName => "binding";
 

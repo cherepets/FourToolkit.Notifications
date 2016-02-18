@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace FourToolkit.Notifications.InteractiveToast
 {
-    public class Text : ToastUiElement, IXmlDescriptor
+    public sealed class Text : ToastUiElement, IXmlDescriptor
     {
         string IXmlDescriptor.XmlTagName => "text";
 

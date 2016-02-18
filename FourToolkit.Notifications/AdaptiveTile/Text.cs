@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace FourToolkit.Notifications.AdaptiveTile
 {
-    public class Text : TileUiElement, IXmlDescriptor
+    public sealed class Text : TileUiElement, IXmlDescriptor
     {
         string IXmlDescriptor.XmlTagName => "text";
 

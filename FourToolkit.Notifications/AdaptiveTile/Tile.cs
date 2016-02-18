@@ -7,7 +7,7 @@ using Windows.UI.Notifications;
 
 namespace FourToolkit.Notifications.AdaptiveTile
 {
-    public class Tile : Bindable, IXmlDescriptor
+    public sealed class Tile : Bindable, IXmlDescriptor
     {
         string IXmlDescriptor.XmlTagName => "tile";
 

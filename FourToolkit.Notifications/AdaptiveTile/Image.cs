@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace FourToolkit.Notifications.AdaptiveTile
 {
-    public class Image : TileUiElement, IXmlDescriptor
+    public sealed class Image : TileUiElement, IXmlDescriptor
     {
         string IXmlDescriptor.XmlTagName => "image";
 

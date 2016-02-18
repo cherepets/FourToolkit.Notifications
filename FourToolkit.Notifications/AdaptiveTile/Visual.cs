@@ -2,12 +2,11 @@
 using FourToolkit.Notifications.Xml;
 using System.Collections.Generic;
 using System.Linq;
-using Windows.UI.Xaml;
 using System.Collections;
 
 namespace FourToolkit.Notifications.AdaptiveTile
 {
-    public partial class Visual : Bindable, IXmlDescriptor, IList<TileUiElement>
+    public sealed class Visual : Bindable, IXmlDescriptor, IList<TileUiElement>
     {
         string IXmlDescriptor.XmlTagName => "binding";
 

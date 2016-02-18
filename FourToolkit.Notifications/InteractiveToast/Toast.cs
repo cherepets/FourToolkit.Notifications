@@ -8,7 +8,7 @@ using Windows.UI.Notifications;
 
 namespace FourToolkit.Notifications.InteractiveToast
 {
-    public class Toast : Bindable, IXmlDescriptor
+    public sealed class Toast : Bindable, IXmlDescriptor
     {
         string IXmlDescriptor.XmlTagName => "toast";
 

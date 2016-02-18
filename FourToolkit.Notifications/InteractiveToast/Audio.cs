@@ -2,7 +2,7 @@
 
 namespace FourToolkit.Notifications.InteractiveToast
 {
-    public class Audio : Bindable
+    public sealed class Audio : Bindable
     {
         public string Source { get; set; }
         public bool Loop { get; set; }

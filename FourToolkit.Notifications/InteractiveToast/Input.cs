@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace FourToolkit.Notifications.InteractiveToast
 {
-    public class Input : ActionBase, IXmlDescriptor, IList<Selection>
+    public sealed class Input : ActionBase, IXmlDescriptor, IList<Selection>
     {
         string IXmlDescriptor.XmlTagName => "input";
 

@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace FourToolkit.Notifications.AdaptiveTile
 {
-    public partial class Group : TileUiElement, IXmlDescriptor, IList<Subgroup>
+    public sealed class Group : TileUiElement, IXmlDescriptor, IList<Subgroup>
     {
         string IXmlDescriptor.XmlTagName => "group";
 
