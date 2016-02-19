@@ -3,6 +3,7 @@ using FourToolkit.Notifications.Xml;
 using System.Collections.Generic;
 using System.Linq;
 using System.Collections;
+using FourToolkit.Notifications.Extensions;
 
 namespace FourToolkit.Notifications.InteractiveToast
 {
@@ -29,7 +30,7 @@ namespace FourToolkit.Notifications.InteractiveToast
         public string BaseUri { get; set; }
         public bool AddImageQuery { get; set; }
 
-        public List<ToastUiElement> Items { get; set; }
+        public IList<ToastUiElement> Items { get; set; }
 
         public Visual()
         {

@@ -3,6 +3,7 @@ using FourToolkit.Notifications.Xml;
 using System.Collections.Generic;
 using System.Linq;
 using System.Collections;
+using FourToolkit.Notifications.Extensions;
 
 namespace FourToolkit.Notifications.AdaptiveTile
 {
@@ -47,7 +48,7 @@ namespace FourToolkit.Notifications.AdaptiveTile
         public string LockDetailedStatus2 { get; set; }
         public string LockDetailedStatus3 { get; set; }
 
-        public List<TileUiElement> Items { get; set; }
+        public IList<TileUiElement> Items { get; set; }
 
         public Visual()
         {

@@ -123,6 +123,7 @@
     <Compile Include="AdaptiveTile\Enum\Template.cs" />
     <Compile Include="AdaptiveTile\Tile.cs" />
     <Compile Include="AdaptiveTile\TileUiElement.cs" />
+    <Compile Include="Extensions\EnumerableExt.cs" />
     <Compile Include="Extensions\ObjectExt.cs" />
     <Compile Include="Extensions\PropertyInfoExt.cs" />
     <Compile Include="Extensions\StringExt.cs" />

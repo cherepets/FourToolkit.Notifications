@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>FourToolkit.Notifications</id>
-        <version>1.0.0</version>
+        <version>1.0.2</version>
         <authors>cherepets</authors>
 	<owners>cherepets</owners>
         <projectUrl>https://github.com/cherepets/FourToolkit.Notifications</projectUrl>
@@ -14,6 +14,12 @@
     <files>
         <file src="FourToolkit.Notifications\bin\Release\FourToolkit.Notifications.dll" target="lib\uap10.0"/>
         <file src="FourToolkit.Notifications\bin\Release\FourToolkit.Notifications.pri" target="lib\uap10.0"/>
-        <file src="FourToolkit.Notifications\bin\Release\FourToolkit.Notifications.pdb" target="lib\uap10.0"/>
+		
+        <file src="FourToolkit.Notifications\bin\Release\FourToolkit.Notifications.dll" target="lib\win"/>
+        <file src="FourToolkit.Notifications\bin\Release\FourToolkit.Notifications.pri" target="lib\win"/>
+		
+        <file src="FourToolkit.Notifications\bin\ARM\Release\FourToolkit.Notifications.dll" target="runtimes\win10-arm\native"/>
+        <file src="FourToolkit.Notifications\bin\x64\Release\FourToolkit.Notifications.dll" target="runtimes\win10-x64\native"/>
+        <file src="FourToolkit.Notifications\bin\x86\Release\FourToolkit.Notifications.dll" target="runtimes\win10-x86\native"/>
     </files>
 </package>

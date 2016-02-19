@@ -1,4 +1,5 @@
 ﻿using FourToolkit.Notifications.AdaptiveTile.Enum;
+using FourToolkit.Notifications.Extensions;
 using FourToolkit.Notifications.Xml;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using Windows.UI.Notifications;
 
 namespace FourToolkit.Notifications.AdaptiveTile
 {
-    public sealed class Tile : Bindable, IXmlDescriptor
+    public class Tile : Bindable, IXmlDescriptor
     {
         string IXmlDescriptor.XmlTagName => "tile";
 
@@ -43,7 +44,7 @@ namespace FourToolkit.Notifications.AdaptiveTile
         public string ContentId { get; set; }
         public string DisplayName { get; set; }
 
-        public List<Visual> Visual { get; set; }
+        public IList<Visual> Visual { get; set; }
 
         public Tile()
         {

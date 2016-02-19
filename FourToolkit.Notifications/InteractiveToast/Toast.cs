@@ -1,4 +1,5 @@
-﻿using FourToolkit.Notifications.InteractiveToast.Enum;
+﻿using FourToolkit.Notifications.Extensions;
+using FourToolkit.Notifications.InteractiveToast.Enum;
 using FourToolkit.Notifications.Xml;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using Windows.UI.Notifications;
 
 namespace FourToolkit.Notifications.InteractiveToast
 {
-    public sealed class Toast : Bindable, IXmlDescriptor
+    public class Toast : Bindable, IXmlDescriptor
     {
         string IXmlDescriptor.XmlTagName => "toast";
 
@@ -67,9 +68,9 @@ namespace FourToolkit.Notifications.InteractiveToast
 
         public Audio Audio { get; set; }
 
-        public List<Visual> Visual { get; set; }
+        public IList<Visual> Visual { get; set; }
 
-        public List<ActionBase> Actions { get; set; }
+        public IList<ActionBase> Actions { get; set; }
         
         public Toast()
         {

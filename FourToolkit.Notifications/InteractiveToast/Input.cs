@@ -1,4 +1,5 @@
-﻿using FourToolkit.Notifications.InteractiveToast.Enum;
+﻿using FourToolkit.Notifications.Extensions;
+using FourToolkit.Notifications.InteractiveToast.Enum;
 using FourToolkit.Notifications.Xml;
 using System.Collections;
 using System.Collections.Generic;
@@ -31,7 +32,7 @@ namespace FourToolkit.Notifications.InteractiveToast
         public string Placeholder { get; set; }
         public string DefaultInput { get; set; }
 
-        public List<Selection> Items { get; set; }
+        public IList<Selection> Items { get; set; }
 
         public Input()
         {

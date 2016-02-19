@@ -1,4 +1,5 @@
 ﻿using FourToolkit.Notifications.AdaptiveTile.Enum;
+using FourToolkit.Notifications.Extensions;
 using FourToolkit.Notifications.Xml;
 using System.Collections;
 using System.Collections.Generic;
@@ -25,7 +26,7 @@ namespace FourToolkit.Notifications.AdaptiveTile
         public double Weight { get; set; }
         public TextStacking TextStacking { get; set; }
 
-        public List<TileUiElement> Items { get; set; }
+        public IList<TileUiElement> Items { get; set; }
 
         protected override void OnDataContextChanged(object value)
             => Items.ForEach(i => i.DataContext = value);

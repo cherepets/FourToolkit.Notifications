@@ -1,4 +1,5 @@
-﻿using FourToolkit.Notifications.Xml;
+﻿using FourToolkit.Notifications.Extensions;
+using FourToolkit.Notifications.Xml;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace FourToolkit.Notifications.AdaptiveTile
 
         string IXmlDescriptor.XmlCustomContent => null;
         
-        public List<Subgroup> Items { get; set; }
+        public IList<Subgroup> Items { get; set; }
         
         protected override void OnDataContextChanged(object value)
             => Items.ForEach(i => i.DataContext = value);
