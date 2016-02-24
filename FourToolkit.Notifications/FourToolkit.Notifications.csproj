@@ -101,6 +101,7 @@
     <PlatformTarget>x86</PlatformTarget>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
+    <GenerateLibraryLayout>true</GenerateLibraryLayout>
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
@@ -150,7 +151,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Xml\XmlBuilder.cs" />
     <Compile Include="Xml\XmlDescriptor.cs" />
-    <Content Include="Properties\FourToolkit.AdaptiveTiles.rd.xml" />
+    <EmbeddedResource Include="Properties\FourToolkit.rd.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
