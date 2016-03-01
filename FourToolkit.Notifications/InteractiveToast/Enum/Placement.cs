@@ -2,6 +2,6 @@
 {
     public enum Placement
     {
-        Null, Inline, Background, Peek
+        Null, Inline, AppLogoOverride
     }
 }
